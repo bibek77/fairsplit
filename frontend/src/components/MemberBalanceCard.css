@@ -1,0 +1,81 @@
+.member-balance-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-balance-card h3 {
+    margin: 0 0 20px 0;
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.balances {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.balance-item {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.member-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.balance-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.balance-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.balance-row.net {
+    margin-top: 5px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.balance-row .label {
+    color: #7f8c8d;
+}
+
+.balance-row .value {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.balance-row .value.positive {
+    color: #27ae60;
+}
+
+.balance-row .value.negative {
+    color: #e74c3c;
+}
+
+.balance-row .value.zero {
+    color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+    .balances {
+        grid-template-columns: 1fr;
+    }
+}

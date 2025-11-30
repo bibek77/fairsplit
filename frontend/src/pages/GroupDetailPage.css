@@ -1,0 +1,132 @@
+.group-detail-page {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.group-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.back-button {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #d5dbdb;
+}
+
+.group-info-header {
+    flex: 1;
+}
+
+.group-info-header h1 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.group-meta {
+    display: flex;
+    gap: 20px;
+    color: #7f8c8d;
+    font-size: 0.95rem;
+}
+
+.add-expense-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    white-space: nowrap;
+}
+
+.add-expense-button:hover {
+    background-color: #229954;
+}
+
+.group-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.error {
+    color: #e74c3c;
+}
+
+.retry-button {
+    margin-top: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.retry-button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 1024px) {
+    .group-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .group-detail-page {
+        padding: 15px;
+    }
+
+    .group-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .back-button,
+    .add-expense-button {
+        width: 100%;
+    }
+
+    .group-info-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .group-meta {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
