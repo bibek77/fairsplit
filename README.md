@@ -2,6 +2,8 @@
 
 A full-stack web application for splitting expenses fairly among groups of people. The system automatically calculates who owes whom and optimizes settlements to minimize the number of transactions required.
 
+![FairSplit Demo](kiro-app-demo.gif)
+
 ## Features
 
 - **Group Management**: Create and manage expense groups with multiple participants
